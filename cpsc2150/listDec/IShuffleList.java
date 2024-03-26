@@ -20,8 +20,17 @@ public interface IShuffleList<T> extends List<T> {
 
     /**
      * Exchanges the values at positions i and j in the list
-     * @param i
-     * @param j
+     * 
+     * @param i index of one of the positions to swap
+     *
+     * @param j index of the other position to swap
+     *
+     * @pre myList[i] != null AND myList[j] != null
+     *
+     * @post myList[i] = [value that was at j] AND myList[j] = [value that was at i]
      */
-    default void swap(int i, int j) {}
+    default void swap(int i, int j) {
+        T n = set(i, get(j));
+        T m = set(j, n);
+    }
 }
