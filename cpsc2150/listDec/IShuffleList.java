@@ -7,7 +7,13 @@ public interface IShuffleList<T> extends List<T> {
     /**
      *Randomly picks two positions in the list and swaps them
      * Repeats this swaps times
-     * @param swaps
+     * 
+     * @param swaps the number of times to swap
+     * 
+     * @pre myList != null && swaps > 0
+     * 
+     * @post myList = [myList contains same values but myList[rand1] and myList[rand2] are 
+     *             changed swaps times]
      */
     default void shuffle(int swaps) {
         Random rand = new Random();
