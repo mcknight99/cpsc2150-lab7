@@ -1,10 +1,6 @@
-package cpsc2150.listDec.cpsc2150.listDec;
+package cpsc2150.listDec;
 
 import java.util.ArrayList;
-
-//compile cmd:
-//javac ShuffleList.java IShuffleList.java ShuffleApp.java
-//javac IShuffleList.java ShuffleList.java ShuffleApp.java
 
 public class ShuffleApp {
 
