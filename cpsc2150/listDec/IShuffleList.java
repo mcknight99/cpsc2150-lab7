@@ -3,6 +3,21 @@ package cpsc2150.listDec.cpsc2150.listDec;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * A generic shuffle interface which extends the List interface. A shuffle is a random permutation of the elements 
+ * in a list with two main operations:
+ * suffle, which randomly picks two positions in the list and swaps them, and swap, which exchanges the values
+ * at two positions in a list. 
+ * The positions are chosen at randomly for a set number of times defined by a user.
+ * 
+ * @defines swaps: the number of times to shuffle the list
+ *      i: the first position to swap
+ *      j: the second position to swap
+ * 
+ * @constraints swaps > 0 AND i >= 0 AND j >= 0 AND i!= j
+ * 
+ * @initialization_ensures the list provided is not null and swaps indexes i and j are swapped swaps times
+ */
 public interface IShuffleList<T> extends List<T> {
     /**
      *Randomly picks two positions in the list and swaps them
