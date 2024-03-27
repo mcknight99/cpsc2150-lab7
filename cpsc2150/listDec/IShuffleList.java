@@ -10,11 +10,9 @@ import java.util.Random;
  * at two positions in a list. 
  * The positions are chosen at randomly for a set number of times defined by a user.
  * 
- * @defines swaps: the number of times to shuffle the list
- *      i: the first position to swap
- *      j: the second position to swap
+ * @defines self: the list to be shuffled
  * 
- * @constraints swaps > 0 AND i >= 0 AND j >= 0 AND i!= j
+ * @constraints swaps > 0 AND i >= 0 AND j >= 0 AND i!= j AND myList != null
  * 
  * @initialization_ensures the list provided is not null and swaps indexes i and j are swapped swaps times
  */
