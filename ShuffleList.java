@@ -1,3 +1,6 @@
+//Sam Pupke
+//Armando Sallas
+//Steven Spivack
 package cpsc2150.listDec;
 
 import java.util.Collection;

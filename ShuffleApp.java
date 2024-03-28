@@ -1,3 +1,6 @@
+//Sam Pupke
+//Armando Sallas
+//Steven Spivack
 package cpsc2150.listDec;
 
 import java.util.ArrayList;
@@ -20,6 +23,7 @@ public class ShuffleApp {
         int max_in_list = 25;
         int num_swaps = 50;
         int num_shuffles = 10;
+        /*
         IShuffleList<Integer> sl = new ShuffleList<>(new ArrayList<Integer>());
 
         for (int i = 1; i <= max_in_list; i++) {
@@ -34,5 +38,7 @@ public class ShuffleApp {
             System.out.println("Shuffled " + i + " times:");
             System.out.println(sl.toString());
         }
+        */
+         System.out.println("HELP");
     }
 }
